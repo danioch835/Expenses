@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  
+    <definition name="addExpense" template="/WEB-INF/views/addExpense.jsp" />
+    <definition name="expensesTable" template="/WEB-INF/views/expensesTable.jsp" />
+    <definition name="expenses" template="/WEB-INF/views/expenses.jsp" />
+    <definition name="excelData" template="/WEB-INF/views/excelData.jsp" />
+    <definition name="mainPage" template="/WEB-INF/views/mainPage.jsp" />
+    <definition name="defaultTemplate" template="/WEB-INF/layouts/default.jsp">
+        <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+    </definition>
+    
+    <definition name="personMonthsExpenses" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/personMonthsExpenses.jsp" />
+    </definition>
+    
+    <definition name="personCategoriesExpenses" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/personCategoriesExpenses.jsp" />
+    </definition>
+    
+    <definition name="expensesStatistics" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/expensesStatistics.jsp" />
+    </definition>
+    
+    <definition name="personCategoriesMonthExpenses" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/personCategoriesMonthExpenses.jsp" />
+    </definition>
+    
+    <definition name="personMonthCategoriesExpenses" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/personMonthCategoriesExpenses.jsp" />
+    </definition>
+    
+</tiles-definitions>
